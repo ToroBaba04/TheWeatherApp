@@ -12,7 +12,7 @@ function App() {
 
   const fetchWeatherData = () => {
     fetch(
-      "https://api.openweathermap.org/data/2.5/weather?q=Ushuaia&appid=77d3483491547590f310e6caedf0cace&units=metric"
+      "https://api.openweathermap.org/data/2.5/weather?q=Casablanca&appid=77d3483491547590f310e6caedf0cace&units=metric"
     )
       .then((result) => result.json())
       .then((jsonResult) => {
@@ -40,6 +40,9 @@ function App() {
 
   return (
     <div className={`App ${determineThemeClass()}`}>
+      <header className="header">
+        <h1>The Weather App</h1>
+      </header>
       <div className="weather-container">
         {loading ? (
           <div className="loading">Loading...</div>

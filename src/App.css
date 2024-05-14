@@ -1,24 +1,44 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  /* background-image: url('/Users/macbookpro/Downloads/BROADjEqdLS.jpg');  */
+  background-image: url(' C:/Users/babat/Downloads/pexels-invisiblepower-1076885.jpg'); 
   background-size: cover;
   background-position: center;
 }
 
+.header {
+  text-align: center;
+  /* background-color: #333; */
+  color: #ffebeb;
+  padding: 20px 0;
+  margin-bottom: 45px; /* Increased space */
+}
+
+.header h1 {
+  margin: 0;
+}
+
 .App {
   display: flex;
-  justify-content: flex-start; /* Aligner à gauche */
+  flex-direction: column;
   align-items: center;
-  height: 100vh;
-  padding-left: 20px; /* Ajouter un peu de marge à gauche */
 }
 
 .weather-container {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  text-align: left; /* Aligner le texte à gauche */
+  text-align: left;
+  background-color: #f0f0f0;
+  width: 30%;
+  margin-right: 20px;
+}
+
+.loading {
+  font-style: italic;
+  color: #888;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .weather-info {
@@ -33,94 +53,74 @@ body {
   margin-top: 10px;
 }
 
-.loading {
-  font-style: italic;
-  color: #888;
-}
-
 .cold .weather-container {
-  background-color: #0033cc; /* Bleu foncé */
+  background-color: #87CEEB;
 }
 
 .hot .weather-container {
-  background-color: #cc0000; /* Rouge foncé */
+  background-color: #FF6347;
 }
 
 .normal .weather-container {
-  background-color: #666666; /* Gris moyen */
-}
-
-
-/* App.css */
-
-.App {
-  font-family: Arial, sans-serif;
-}
-
-.weather-container {
-  padding: 20px;
-  background-color: #f0f0f0;
-  border-radius: 8px;
-  margin-bottom: 20px;
-}
-
-.loading {
-  font-size: 18px;
-  font-weight: bold;
-  color: #333;
-}
-
-.weather-info {
-  margin-top: 20px;
+  background-color: #90EE90;
 }
 
 table {
   border-collapse: collapse;
-  width: 100%;
+  width: 50%;
 }
 
 table th,
 table td {
-  text-align: right;
-}
-
-table td {
-  padding: 8px;
-
-  border-bottom: 1px solid #ddd;
+  padding: 30px;
+  text-align: left;
+  border-bottom: 2px solid #ddd;
 }
 
 table th {
   background-color: #f2f2f2;
   font-weight: bold;
+  color: #333;
 }
 
 table td {
   background-color: #fff;
+  color: #555;
 }
 
 h3 {
   margin-top: 20px;
   font-size: 18px;
-  color: #333;
+  color: #ffffff;
 }
 
 .coordinates-container {
-  margin-right: 50px; /* Réduire la marge droite */
-  margin-left: auto; /* Mettre à droite le plus possible */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .coordinates-container table {
-  font-size: 13px; /* Augmenter la taille de la police */
-  border-collapse: separate;
-  border-spacing: 1px; /* Espacement entre les cellules */
+  border-collapse: collapse;
+  width: 100%;
 }
 
 .coordinates-container th,
 .coordinates-container td {
-  padding: 5px; /* Ajuster le rembourrage */
-  border: 0.1px solid #ccc; /* Ajouter des bordures */
+  padding: 20px;
+  text-align: left;
+  border-bottom: 2px solid #ddd;
 }
 
+.coordinates-container th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  color: #333;
+}
 
-
+.coordinates-container td {
+  background-color: #fff;
+  color: #555;
+}
